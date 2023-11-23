@@ -20,7 +20,7 @@ jobs:
 
 
     - name: Run Tests
-      run: python -m unittest discover -s tests
+      run: python -m unittest discover -s . -p "test_*.py"
 
     - name: Code Quality Analysis with SonarCloud
       uses: SonarSource/sonarcloud-github-action@master
