@@ -18,14 +18,13 @@ jobs:
       with:
         python-version: 3.8
 
-
     - name: Run Tests
       run: python -m unittest discover -s . -p "test_*.py"
 
     - name: Code Quality Analysis with SonarCloud
       uses: SonarSource/sonarcloud-github-action@master
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
     - name: Install Coveralls
