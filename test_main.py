@@ -51,5 +51,5 @@ class TaskListIntegrationTest(unittest.TestCase):
                         "Title: Complete project\nDescription: Finish the coding project\nCompleted: False"
         self.assertEqual(all_tasks_info, expected_info)
 
-if __name__ == '__main__':
-    unittest.main()
+#if __name__ == '__main__':
+    #unittest.main()
