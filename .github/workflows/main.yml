@@ -25,7 +25,8 @@ jobs:
     - name: Code Quality Analysis with SonarCloud
       uses: SonarSource/sonarcloud-github-action@master
       with:
-        sonar-token: ${{ secrets.SONAR_TOKEN }}
+        INPUT_SONAR-TOKEN: ${{ secrets.SONAR_TOKEN }}
+    
 
     - name: Code Coverage with Coveralls
       run: coveralls
