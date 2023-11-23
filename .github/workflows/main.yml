@@ -16,7 +16,7 @@ jobs:
     - name: Set Up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8 
+        python-version: 3.8
 
 
     - name: Run Tests
@@ -28,6 +28,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
+    - name: Install Coveralls
+      run: pip install coveralls
 
     - name: Code Coverage with Coveralls
       run: coveralls
