@@ -27,7 +27,7 @@ jobs:
       run: python -m unittest discover -s tests
 
     - name: Code Quality Analysis with SonarCloud
-      uses: sonarsource/sonarcloud-github-action@v1
+      uses: SonarSource/sonarcloud-github-action@latest
       with:
         sonar-token: ${{ secrets.SONAR_TOKEN }}
 
