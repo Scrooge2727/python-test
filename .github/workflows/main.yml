@@ -23,7 +23,7 @@ jobs:
     - name: Run Tests
       run: coverage run --source=. -m unittest discover -s . -p "test_*.py"
     - name: Without main
-      run: coverage report -m --omit "main.py"
+      run: coverage report -m --omit "input.py"
     - name: Code Quality Analysis with SonarCloud
       uses: SonarSource/sonarcloud-github-action@master
       env:
