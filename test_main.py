@@ -1,6 +1,6 @@
 import unittest
 
-from main import Task, TaskList, main
+from main import Task, TaskList
 
 class TaskTest(unittest.TestCase):
     def test_task_completion(self):
