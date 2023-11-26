@@ -1,7 +1,5 @@
 import unittest
-from unittest.mock import patch
-from io import StringIO
-import sys
+
 from main import Task, TaskList, main
 
 class TaskTest(unittest.TestCase):
