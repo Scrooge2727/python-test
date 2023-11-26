@@ -58,6 +58,6 @@ def main():
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 5.")
-
+# pragma: no cover
 if __name__ == "__main__":
     main()
