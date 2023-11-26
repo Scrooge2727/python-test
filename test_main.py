@@ -1,5 +1,8 @@
 import unittest
-from main import Task, TaskList
+from unittest.mock import patch
+from io import StringIO
+import sys
+from main import Task, TaskList, main
 
 class TaskTest(unittest.TestCase):
     def test_task_completion(self):
@@ -63,4 +66,3 @@ class TaskListIntegrationTest(unittest.TestCase):
 
         completed_tasks = self.task_list._get_completed_tasks()
         self.assertListEqual(completed_tasks, [task1])
-
