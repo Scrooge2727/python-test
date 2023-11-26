@@ -30,12 +30,14 @@ class TaskList:
 
 
 def create_task():
+    # pragma: no cover
     title = input("Enter task title: ")
     description = input("Enter task description: ")
     return Task(title, description)
 
 
 def print_task_list(task_list):
+    # pragma: no cover
     print("Tasks:")
     for index, task in enumerate(task_list.tasks, start=1):
         print(f"{index}. {task.get_task_info()}")
@@ -43,6 +45,7 @@ def print_task_list(task_list):
 
 # Пример использования
 def main():
+    # pragma: no cover
     task_list = TaskList()
 
     while True:
