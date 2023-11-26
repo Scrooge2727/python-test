@@ -64,5 +64,3 @@ class TaskListIntegrationTest(unittest.TestCase):
         completed_tasks = self.task_list._get_completed_tasks()
         self.assertListEqual(completed_tasks, [task1])
 
-if __name__ == "__main__":
-    unittest.main()
