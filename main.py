@@ -20,7 +20,7 @@ class TaskList:
 
     def remove_task(self, task):
         self.tasks.remove(task)
-
+ 
     def get_all_tasks_info(self):
         task_info = "\n".join(task.get_task_info() for task in self.tasks)
         return f"Tasks:\n{task_info}"

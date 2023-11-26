@@ -33,7 +33,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
-        
+
     - name: Code Quality Analysis with SonarCloud
       uses: SonarSource/sonarcloud-github-action@master
       env:
