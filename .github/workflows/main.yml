@@ -22,7 +22,7 @@ jobs:
 
     - name: Run Tests
       run: coverage run --source=. -m unittest discover -s . -p "test_*.py"
-    - name: Without main
+    - name: Without input
       run: coverage report -m --omit "input.py"
 
     - name: Install Coveralls

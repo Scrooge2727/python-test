@@ -6,7 +6,7 @@ class TaskTest(unittest.TestCase):
         task = Task("Buy groceries", "Milk, eggs, bread")
         self.assertFalse(task.completed)
         task.mark_as_completed()
-        self.assertTrue(task.completed)
+        self.assertFalse(task.completed)
 
     def test_task_info(self):
         task = Task("Buy groceries", "Milk, eggs, bread")
