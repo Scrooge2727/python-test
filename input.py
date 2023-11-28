@@ -1,4 +1,5 @@
 from main import Task, TaskList
+
 def create_task():
     # pragma: no cover
     title = input("Enter task title: ")
