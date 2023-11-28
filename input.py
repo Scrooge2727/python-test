@@ -17,7 +17,7 @@ def print_task_list(task_list):
 # Пример использования
 def main():
     # pragma: no cover
-    task_list = TaskList()
+    task_list = TaskList() 
 
     while True:
         print("\nOptions:")
